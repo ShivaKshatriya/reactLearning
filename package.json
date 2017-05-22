@@ -1,0 +1,29 @@
+{
+  "name": "react-ab-initio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.5",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-router-dom": "^4.1.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^19.2.3",
+    "@types/react": "^15.0.24",
+    "@types/react-dom": "^15.5.0",
+    "@types/react-router-dom": "^4.0.4",
+    "node-sass-chokidar": "0.0.1",
+    "npm-run-all": "^4.0.2",
+    "react-scripts-ts": "1.4.0"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts-ts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  }
+}
