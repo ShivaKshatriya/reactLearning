@@ -14,8 +14,16 @@ class SalutationExample extends React.Component<{}, { name: string }> {
   public render() {
     return (
       <div className="large-example">
-          <strong>
-            Hello {this.state.name}
+          <strong className={this.state.name.length > 0 ? 'cool-name': ''}>
+            {this.state.name.length > 0 ? (
+              <span>
+                Hello {this.state.name}
+              </span>
+            ) : (
+              <span>
+                Who are you?
+              </span>
+            )}
           </strong>
           <br />
           <input value={this.state.name} onChange={this.updateName} className="input-text" />
