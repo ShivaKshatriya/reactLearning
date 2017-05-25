@@ -1,0 +1,36 @@
+@import '../base/variables';
+@import '../base/animations';
+
+.example {
+  padding: unit-space(1);
+  margin: unit-space(1) 0;
+  background: lighten($alt-color, 30);
+}
+
+.large-example {
+  @extend .example;
+  font-size: 24px;
+  padding: unit-space(2);
+  .input-text {
+    margin-top: unit-space(1);
+  }
+  ul {
+    margin: unit-space(1) 0;
+    padding-left: unit-space(0.5);
+    li {
+      margin-bottom: unit-space(0.5);
+      &:before {
+        color: $alt-color;
+        content: '-';
+      }
+    }
+  }
+}
+
+.cool-name {
+  display: block;
+  animation-duration: 1s;
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+}
+

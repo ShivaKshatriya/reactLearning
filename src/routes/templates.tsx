@@ -1,4 +1,5 @@
 import * as React from 'react';
+import SalutationExample from '../components/salutation-example';
 
 export default function() {
     return (
@@ -12,11 +13,14 @@ export default function() {
             
             <h3>Data binding</h3>
             <p>
-                <em>Complete the tasks stated in the comments at: <pre>app/templates/components/binding-example-salutation.hbs</pre></em>
+                <em>Complete the tasks stated in the comments at:</em>
             </p>
+            <pre>src/components/salutation-example.tsx</pre>
 
             <div className="row">
-                lol
+                <div className="col-md-6">
+                    <SalutationExample />
+                </div>
             </div>
         </div>
     );
