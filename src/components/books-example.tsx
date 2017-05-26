@@ -2,15 +2,15 @@ import * as React from 'react';
 import '../styles/components/books-example.css';
 
 interface BooksExampleProps {
-    russianAuthors: Array<string>,
-    frenchAuthors: Array<string>,
-    guatemalaAuthors: Array<string>
+    russianAuthors: Array<string>;
+    frenchAuthors: Array<string>;
+    guatemalaAuthors: Array<string>;
 }
 
 interface BooksExampleState {
-    showRussian?: boolean,
-    showFrench?: boolean,
-    showGuatemala?: boolean
+    showRussian?: boolean;
+    showFrench?: boolean;
+    showGuatemala?: boolean;
 }
 
 class BooksExample extends React.Component<BooksExampleProps, BooksExampleState> {
@@ -21,7 +21,7 @@ class BooksExample extends React.Component<BooksExampleProps, BooksExampleState>
         showRussian: true,
         showFrench: true,
         showGuatemala: true
-    }
+    };
     this.updateCheckbox = this.updateCheckbox.bind(this);
   }
 
@@ -34,7 +34,12 @@ class BooksExample extends React.Component<BooksExampleProps, BooksExampleState>
                     <nav className="books-nav">
                         <label className="button">
                             Russian authors
-                            <input checked={this.state.showRussian} type="checkbox" name="showRussian" onChange={this.updateCheckbox} />
+                            <input
+                                checked={this.state.showRussian}
+                                type="checkbox"
+                                name="showRussian"
+                                onChange={this.updateCheckbox}
+                            />
                         </label>
                     </nav>
 
@@ -46,7 +51,7 @@ class BooksExample extends React.Component<BooksExampleProps, BooksExampleState>
                     <ul>
                         {this.props.russianAuthors.map((author: string) => {
                             return (
-                                <li>
+                                <li key={author.toString()}>
                                     {author}
                                 </li>
                             );

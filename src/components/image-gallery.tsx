@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 export interface imageGalleryProps {
-    images: string[];
+    images: string[]
 }
 
 export default function(props: imageGalleryProps) {

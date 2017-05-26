@@ -4,9 +4,11 @@ import {
   BrowserRouter, 
   Route
 } from 'react-router-dom';
-import templatesRoute from './routes/templates';
-import indexRoute from './routes/index';
 import AppHeader from './App-Header';
+
+import indexRoute from './routes/index';
+import templatesRoute from './routes/templates';
+import componentsRoute from './routes/components';
 
 import './styles/modules/App.css';
 
@@ -19,6 +21,7 @@ render(
         <div>
           <Route exact={true} path="/" component={indexRoute} />
           <Route path="/templates" component={templatesRoute} />
+          <Route path="/components" component={componentsRoute} />
         </div>
       </BrowserRouter>
 
