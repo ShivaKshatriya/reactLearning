@@ -1,5 +1,10 @@
 import * as React from 'react';
 import SalutationExample from '../components/salutation-example';
+import BooksExample from '../components/books-example';
+
+const russianAuthors : string[] = ['Dostoievsky', 'Tolstoi'];
+const frenchAuthors : string[] = ['Dumas', 'Moliére', 'Descartes'];
+const guatemalaAuthors : string[] = ['Vargas', 'Pazos', 'Hernández'];
 
 export default function() {
     return (
@@ -22,6 +27,21 @@ export default function() {
                     <SalutationExample />
                 </div>
             </div>
+
+            <p>
+                <em>Complete the tasks stated in the comments at:</em>
+            </p>
+            <pre>src/components/books-example.tsx</pre>
+            <div className="row">
+                <div className="col-md-12">
+                    <BooksExample
+                        russianAuthors={russianAuthors}
+                        frenchAuthors={frenchAuthors}
+                        guatemalaAuthors={guatemalaAuthors}
+                    />
+                </div>
+            </div>
+    
         </div>
     );
 };

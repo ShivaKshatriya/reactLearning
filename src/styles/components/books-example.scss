@@ -1,0 +1,13 @@
+@import '../base/variables';
+
+.books-nav {
+  margin-bottom: unit-space(1);
+  .button {
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 3px solid $main-color;
+    &.active {
+      border-color: $action-color;
+    }
+  }
+}
