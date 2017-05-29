@@ -8,6 +8,7 @@ import AppHeader from './App-Header';
 
 import indexRoute from './routes/index';
 import templatesRoute from './routes/templates';
+import actionsRoute from './routes/actions';
 import componentsRoute from './routes/components';
 
 import './styles/modules/App.css';
@@ -21,6 +22,7 @@ render(
         <div>
           <Route exact={true} path="/" component={indexRoute} />
           <Route path="/templates" component={templatesRoute} />
+          <Route path="/actions" component={actionsRoute} />
           <Route path="/components" component={componentsRoute} />
         </div>
       </BrowserRouter>
