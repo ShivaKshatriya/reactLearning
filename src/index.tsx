@@ -10,8 +10,9 @@ import indexRoute from './routes/index';
 import templatesRoute from './routes/templates';
 import actionsRoute from './routes/actions';
 import componentsRoute from './routes/components';
+import stateRoute from './routes/state-management';
 
-import './styles/modules/App.css';
+import './styles/modules/app.css';
 
 render(
   (
@@ -24,6 +25,7 @@ render(
           <Route path="/templates" component={templatesRoute} />
           <Route path="/actions" component={actionsRoute} />
           <Route path="/components" component={componentsRoute} />
+          <Route path="/state-management" component={stateRoute} />
         </div>
       </BrowserRouter>
 
