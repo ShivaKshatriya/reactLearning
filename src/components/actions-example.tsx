@@ -1,10 +1,10 @@
 import * as React from 'react';
 
-interface actionsState {
+interface ActionsState {
     showMessage: boolean
 }
 
-class ActionsExample extends React.Component<{ }, actionsState> {
+class ActionsExample extends React.Component<{ }, ActionsState> {
     constructor() {
         super();
         this.state = {

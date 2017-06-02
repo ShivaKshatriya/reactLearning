@@ -8,6 +8,7 @@ export default function() {
             <li><Link to="templates">Templates</Link></li>
             <li><Link to="actions">Actions</Link></li>
             <li><Link to="components">Components</Link></li>
+            <li><Link to="ajax">Ajax</Link></li>
             <li><Link to="state-management">State management</Link></li>
           </ul>
       </div>

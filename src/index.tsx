@@ -10,6 +10,7 @@ import indexRoute from './routes/index';
 import templatesRoute from './routes/templates';
 import actionsRoute from './routes/actions';
 import componentsRoute from './routes/components';
+import ajaxRoute from './routes/ajax';
 import stateRoute from './routes/state-management';
 
 import './styles/modules/app.css';
@@ -26,6 +27,7 @@ render(
           <Route path="/actions" component={actionsRoute} />
           <Route path="/components" component={componentsRoute} />
           <Route path="/state-management" component={stateRoute} />
+          <Route path="/ajax" component={ajaxRoute} />
         </div>
       </BrowserRouter>
 

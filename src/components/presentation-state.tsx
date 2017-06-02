@@ -1,11 +1,11 @@
 import * as React from 'react';
 import '../styles/components/presentation-state.css';
 
-interface presentationState {
+interface PresentationStateState {
     isRed: boolean
 }
 
-class PresentationState extends React.Component<{ }, presentationState> {
+class PresentationState extends React.Component<{ }, PresentationStateState> {
     constructor() {
         super();
         this.state = {
