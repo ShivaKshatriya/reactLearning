@@ -1,0 +1,19 @@
+@import '../base/variables';
+
+.notifications-miniapp {
+    background: #f1f1f1;
+    margin-top: unit-space(1);
+    border-radius: 8px;
+    h3 {
+        margin: unit-space(1);
+    }
+    footer {
+        text-align: center;
+        padding: unit-space(1) 0;
+        .button {
+            background: darken($alt-color, 20);
+            font-size: 16px;
+            padding: 0 10px;
+        }
+    }
+}

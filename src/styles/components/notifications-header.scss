@@ -1,0 +1,21 @@
+@import '../base/variables';
+
+.notifications-header {
+    background: $alt-color;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: unit-space(1);
+    color: #fff;
+}
+
+.notifications-count {
+    background: #fff;
+    color: $main-color;
+    font-weight: bold;
+    width: 20px;
+    text-align: center;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 16px;
+}

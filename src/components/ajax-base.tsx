@@ -1,12 +1,12 @@
 import * as React from 'react';
 
 export interface AjaxProps {
-    url: string,
-    method: string
+    url: string;
+    method: string;
 }
 
 export interface AjaxState {
-    success: boolean
+    success: boolean;
 }
 
 abstract class  AjaxXhr extends React.Component<AjaxProps, AjaxState> {
@@ -26,7 +26,7 @@ abstract class  AjaxXhr extends React.Component<AjaxProps, AjaxState> {
         );
     }
 
-    abstract loadAjax() : void
+    abstract loadAjax(): void
 }
 
 export default AjaxXhr;

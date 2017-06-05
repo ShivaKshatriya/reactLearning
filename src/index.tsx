@@ -12,6 +12,7 @@ import actionsRoute from './routes/actions';
 import componentsRoute from './routes/components';
 import ajaxRoute from './routes/ajax';
 import stateRoute from './routes/state-management';
+import reduxRoute from './routes/redux';
 
 import './styles/modules/app.css';
 
@@ -26,8 +27,9 @@ render(
           <Route path="/templates" component={templatesRoute} />
           <Route path="/actions" component={actionsRoute} />
           <Route path="/components" component={componentsRoute} />
-          <Route path="/state-management" component={stateRoute} />
           <Route path="/ajax" component={ajaxRoute} />
+          <Route path="/state-management" component={stateRoute} />
+          <Route path="/redux" component={reduxRoute} />
         </div>
       </BrowserRouter>
 

@@ -2,7 +2,7 @@ import * as React from 'react';
 import '../styles/components/presentation-state.css';
 
 interface PresentationStateState {
-    isRed: boolean
+    isRed: boolean;
 }
 
 class PresentationState extends React.Component<{ }, PresentationStateState> {
@@ -17,7 +17,7 @@ class PresentationState extends React.Component<{ }, PresentationStateState> {
     public render() {
         return (
             <div>
-                <div className={this.state.isRed ? "target-box red" : "target-box"}/>
+                <div className={this.state.isRed ? 'target-box red' : 'target-box'}/>
                 <button className="button" onClick={this.toggleRed}>
                     Change color
                 </button>
@@ -33,4 +33,3 @@ class PresentationState extends React.Component<{ }, PresentationStateState> {
 }
 
 export default PresentationState;
-
