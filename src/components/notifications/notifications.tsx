@@ -7,15 +7,15 @@ import { Store } from './reducers';
 import '../../styles/components/notifications-list.css';
 
 type OwnProps = {
-}
+};
 
 type ConnectedState = {
     notifications: Store.Notification[]
-}
+};
 
 type ConnectedDispatch = {
     dismiss: (id: number) => void;
-}
+};
 
 const mapStateToProps = (state: Store.All, listProps: OwnProps): ConnectedState => ({
     notifications: state.notifications

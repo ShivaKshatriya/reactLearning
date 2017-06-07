@@ -1,13 +1,13 @@
 import * as React from 'react';
 
-export interface AjaxProps {
+export type AjaxProps = {
     url: string;
     method: string;
-}
+};
 
-export interface AjaxState {
+export type AjaxState = {
     success: boolean;
-}
+};
 
 abstract class  AjaxXhr extends React.Component<AjaxProps, AjaxState> {
     public constructor() {

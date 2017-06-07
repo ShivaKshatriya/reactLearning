@@ -10,15 +10,15 @@ export namespace Store {
         id: number,
         text: string,
         createdOn: Date
-    }
+    };
 
     export type All = {
         notifications: Notification[]
-    }
+    };
 }
 
-function notifications(state = [] as Store.Notification[], action: Action) : Store.Notification[] {
-    switch(action.type) {
+function notifications(state: Store.Notification[] = [], action: Action): Store.Notification[] {
+    switch (action.type) {
         case DISMISS_NOTIFICATION:
             let notificationsNew = state.filter((notification) => {
                 return notification.id !== action.id;

@@ -29,7 +29,7 @@ let sampleState = {
             createdOn: new Date()
         } as Store.Notification
     ]
-}
+};
 
 let store: redux.Store<Store.All> = redux.createStore(
     reducers,

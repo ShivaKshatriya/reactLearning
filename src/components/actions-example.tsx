@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-interface ActionsState {
+type ActionsState = {
     showMessage: boolean
-}
+};
 
 class ActionsExample extends React.Component<{ }, ActionsState> {
     constructor() {
@@ -27,8 +27,10 @@ class ActionsExample extends React.Component<{ }, ActionsState> {
                     )}
                     {/*
                     TASKS
-                    1. Make the button say 'Show' when showMessage is false and 'Hide' when showMessage is true
-                    2. Create an action in your completed books-example Component for the All button and the None button, so the action make all categories false
+                    1. Make the button say 'Show' when showMessage is false
+                       and 'Hide' when showMessage is true
+                    2. Create an action in your completed books-example Component
+                       for the All button and the None button, so the action make all categories false
                     */}
                 </div>
             </div>
@@ -43,4 +45,3 @@ class ActionsExample extends React.Component<{ }, ActionsState> {
 }
 
 export default ActionsExample;
-

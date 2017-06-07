@@ -11,7 +11,7 @@ class AjaxFetch extends AjaxBase {
             alert(response);
         })
         .catch(() => {
-            alert('Something went wrong!')
+            alert('Something went wrong!');
         });
     }
 }
