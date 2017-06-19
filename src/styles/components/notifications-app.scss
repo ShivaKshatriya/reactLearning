@@ -16,4 +16,16 @@
             padding: 0 10px;
         }
     }
+    .add-notification {
+        padding-bottom: unit-space(1);
+        form {
+            margin: unit-space(1);
+            .input-text {
+                margin-right: unit-space(1);
+            }
+            input[type="number"] {
+                width: 100px;
+            }
+        }
+    }
 }

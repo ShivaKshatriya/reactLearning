@@ -6,14 +6,14 @@ import { dismissNotification } from './actions';
 import { Store } from './reducers';
 import '../../styles/components/notifications-list.css';
 
-type OwnProps = {
+interface OwnProps {
 };
 
-type ConnectedState = {
+interface ConnectedState {
     notifications: Store.Notification[]
 };
 
-type ConnectedDispatch = {
+interface ConnectedDispatch {
     dismiss: (id: number) => void;
 };
 
@@ -34,7 +34,11 @@ class NotificationsList extends React.Component<ConnectedState & ConnectedDispat
                     <ul>
                         {notifications.map((notification: Store.Notification) => {
                             return (
-                                <NotificationItem dismiss={dismiss} notification={notification} />
+                                <NotificationItem
+                                    dismiss={dismiss}
+                                    notification={notification}
+                                    key={notification.id.toString()}
+                                />
                             );
                         })}
                     </ul>
@@ -46,4 +50,5 @@ class NotificationsList extends React.Component<ConnectedState & ConnectedDispat
     }
 }
 
-export const Notifications: React.ComponentClass<OwnProps> = connect(mapStateToProps, mapDispatchToProps)(NotificationsList);
+export const Notifications: React.ComponentClass<OwnProps> 
+                            = connect(mapStateToProps, mapDispatchToProps)(NotificationsList);

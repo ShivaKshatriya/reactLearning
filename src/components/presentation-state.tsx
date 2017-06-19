@@ -6,15 +6,11 @@ interface PresentationStateState {
 }
 
 class PresentationState extends React.Component<{ }, PresentationStateState> {
-    constructor() {
-        super();
-        this.state = {
-            isRed: false
-        };
-        this.toggleRed = this.toggleRed.bind(this);
-    }
-
-    public render() {
+    state = {
+        isRed: false
+    };
+   
+    render() {
         return (
             <div>
                 <div className={this.state.isRed ? 'target-box red' : 'target-box'}/>
@@ -25,11 +21,11 @@ class PresentationState extends React.Component<{ }, PresentationStateState> {
         );
     }
 
-    private toggleRed() {
+    toggleRed = () =>  {
         this.setState({
             isRed: !this.state.isRed
         });
-    }
+    };
 }
 
 export default PresentationState;

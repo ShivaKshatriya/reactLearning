@@ -1,0 +1,11 @@
+exports[`component/notification-item renders correctly 1`] = `
+<li
+  className="notification-item">
+  Test String
+  <button
+    className="button"
+    onClick={[Function]}>
+    Dismiss
+  </button>
+</li>
+`;

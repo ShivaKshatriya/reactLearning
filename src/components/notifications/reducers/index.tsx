@@ -6,13 +6,13 @@ import {
 } from '../actions';
 
 export namespace Store {
-    export type Notification = {
-        id: number,
-        text: string,
-        createdOn: Date
+    export interface Notification {
+        id: number;
+        text: string;
+        createdOn: number;
     };
 
-    export type All = {
+    export interface All {
         notifications: Notification[]
     };
 }

@@ -16,17 +16,17 @@ let sampleState = {
         {
             id: 1,
             text: 'Your redux seems to be working now.',
-            createdOn: new Date()
+            createdOn: Date.now()
         } as Store.Notification,
         {
             id: 2,
             text: 'Your setup might not be correct.',
-            createdOn: new Date()
+            createdOn: Date.now()
         } as Store.Notification,
         {
             id: 3,
             text: 'Welcome to typescript.',
-            createdOn: new Date()
+            createdOn: Date.now()
         } as Store.Notification
     ]
 };
