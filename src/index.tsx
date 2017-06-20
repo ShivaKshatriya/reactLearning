@@ -4,7 +4,7 @@ import {
   BrowserRouter, 
   Route
 } from 'react-router-dom';
-import AppHeader from './App-Header';
+import AppHeader from './app-header';
 
 import indexRoute from './routes/index';
 import templatesRoute from './routes/templates';
@@ -14,7 +14,7 @@ import ajaxRoute from './routes/ajax';
 import stateRoute from './routes/state-management';
 import reduxRoute from './routes/redux';
 
-import './styles/modules/app.css';
+import './styles/modules/app-main.css';
 
 render(
   (
