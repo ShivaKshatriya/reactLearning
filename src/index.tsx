@@ -4,7 +4,7 @@ import {
   BrowserRouter, 
   Route
 } from 'react-router-dom';
-import AppHeader from './app-header';
+import AppHeader from './components/app-header';
 
 import indexRoute from './routes/index';
 import templatesRoute from './routes/templates';
