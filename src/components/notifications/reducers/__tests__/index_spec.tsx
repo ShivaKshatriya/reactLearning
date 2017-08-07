@@ -1,4 +1,5 @@
 import * as redux from 'redux';
+import {} from 'jest';
 import { reducers, Store } from '../index';
 import {
   dismissNotification,

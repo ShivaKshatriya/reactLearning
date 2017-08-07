@@ -1,0 +1,21 @@
+@import '../base/variables';
+
+.choice-list {
+  li {
+    background: #fafafa;
+    border-left: 3px solid $main-color;
+    padding: 5px 10px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    transition: all 0.2s;
+    &.veg {
+      border-color: green;
+    }
+    &.nonveg {
+      border-color: red;
+    }
+    &.selected {
+      border-left-width: 10px;
+    }
+  }
+}

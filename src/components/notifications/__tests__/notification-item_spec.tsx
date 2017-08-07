@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {} from 'jest';
 import { Store } from '../reducers';
 import NotificationItem from '../notification-item';
 import { create } from 'react-test-renderer';
